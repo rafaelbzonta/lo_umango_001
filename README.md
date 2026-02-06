@@ -1,51 +1,132 @@
+# lo_umango_001
+
+Projeto demonstrativo de integração entre **PaperCut MF**, **Umango** e **Banco de Dados Firebird**, focado em captura de documentos, leitura de metadados via XML, OCR por zona e persistência de dados estruturados.
+
+Este projeto foi desenvolvido para fins **técnicos, educacionais e comerciais**, servindo como base funcional para demonstrações, provas de conceito e estudos de arquitetura ECM.
+
+---
+
 ## Sumário
-- [Visão Geral](#vis%C3%A3o-geral)
-- [Arquitetura](#arquitetura)
-- [Instalação](#instala%C3%A7%C3%A3o)
-- [Uso](#uso)
-- [Diagrama](#diagrama)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Licença](#licen%C3%A7a)
-- [Créditos](#cr%C3%A9ditos)
 
-Arquitetura:
+- Visão Geral  
+- Arquitetura  
+- Tecnologias Utilizadas  
+- Estrutura do Projeto  
+- Instalação  
+- Uso  
+- Licença  
+- Créditos  
 
-[MFP]
-  ↓
-PaperCut MF
-  ↓ (XML + PDF...)
-Pasta Monitorada
-  ↓
-Umango
-  ├─ Leitura de XML (PaperCut)
-  ├─ OCR por Zona (Opcional)
-  ├─ Indexação
-  ↓
-Banco de Dados (Firebird )
-_____________________________________________________
+---
 
-Tecnologias Utilizadas:
--PaperCut MF
-   Integrated Scanning
-   Geração de XML de metadados
--Umango
-  OCR por Zona
-  Index Fields
-  Database Export (ODBC)
--Banco de Dados
-  Firebird
--ODBC
-  Conexão local para persistência dos dados
-  _____________________________________________________
+## Visão Geral
 
-Este é um projeto demonstrativo, desenvolvido para fins técnicos, educacionais e comerciais, com o objetivo de apresentar uma arquitetura funcional de integração entre captura de documentos,  OCR e persistência de dados estruturados.
+O **lo_umango_001** demonstra um fluxo completo de digitalização corporativa, integrando:
+
+- Digitalização em MFP
+- Geração de metadados pelo PaperCut MF
+- Processamento e OCR por zona no Umango
+- Persistência dos dados em banco Firebird via ODBC
 
 O projeto pode ser utilizado como base para:
-Provas de conceito (PoC);
-Demonstrações técnicas;
-Treinamentos;
-Apresentações comerciais;
-Estudos de arquitetura ECM;
 
-Agradecimento:
-Agradecimento especial a Renato Zaha, pelo apoio, troca de conhecimento de sempre.
+- Provas de Conceito (PoC)  
+- Demonstrações técnicas  
+- Treinamentos  
+- Apresentações comerciais  
+- Estudos de arquitetura ECM  
+
+---
+
+## Arquitetura
+
+Fluxo lógico do processamento:
+
+[MFP]
+↓
+PaperCut MF
+↓ (PDF + XML de metadados)
+Pasta Monitorada
+↓
+Umango
+├─ Leitura de XML (PaperCut)
+├─ OCR por Zona (opcional)
+├─ Indexação de Campos
+↓
+Banco de Dados Firebird (ODBC)
+
+
+A arquitetura é modular e permite fácil adaptação para outros bancos de dados ou motores de OCR.
+
+---
+
+## Tecnologias Utilizadas
+
+- **PaperCut MF – Integrated Scanning**  
+  Responsável pela captura dos documentos e geração de arquivos PDF e XML com metadados do scan.
+
+- **Umango**  
+  - Monitoramento de pasta  
+  - Leitura de XML externo  
+  - OCR por zona  
+  - Indexação de campos  
+  - Exportação de dados via ODBC  
+
+- **Banco de Dados Firebird**  
+  Utilizado para persistência dos dados estruturados extraídos no processo.
+
+- **ODBC Firebird**  
+  Conexão local utilizada pelo Umango para gravação dos dados no banco.
+
+---
+
+## Instalação
+
+### Pré-requisitos
+
+- PaperCut MF configurado com Integrated Scanning
+- Umango instalado e licenciado
+- Firebird instalado e operacional
+- Driver ODBC do Firebird configurado no sistema operacional
+
+### Passos gerais
+
+1. Criar o banco de dados Firebird e executar o script SQL disponível na pasta `sql`.
+2. Configurar a conexão ODBC do Firebird.
+3. Configurar o Umango para:
+   - Monitorar a pasta de saída do PaperCut
+   - Ler os campos do XML
+   - (Opcional) Aplicar OCR por zona
+   - Exportar os dados via ODBC
+4. Configurar o fluxo de digitalização no PaperCut MF.
+
+---
+
+## Uso
+
+1. O usuário realiza o scan no equipamento MFP.
+2. O PaperCut MF gera o PDF e o XML com os metadados.
+3. O Umango processa os arquivos da pasta monitorada.
+4. Os dados são indexados e gravados no banco Firebird.
+5. As informações ficam disponíveis para consulta e integrações futuras.
+
+---
+
+## Licença
+
+Este é um **projeto demonstrativo**.
+
+O uso está liberado para fins educacionais e técnicos.  
+Para uso comercial, é necessário respeitar as licenças dos softwares envolvidos:
+
+- PaperCut MF  
+- Umango  
+- Firebird  
+
+---
+
+## Créditos
+
+Agradecimento especial a **Renato Zaha**, pelo apoio e pela troca constante de conhecimento.
+
+
