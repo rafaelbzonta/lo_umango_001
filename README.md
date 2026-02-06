@@ -1,6 +1,6 @@
 # lo_umango_001
 
-Projeto demonstrativo de integração entre **PaperCut MF**, **Umango** e **Banco de Dados Firebird**, focado em captura de documentos, leitura de metadados via XML, OCR por zona e persistência de dados estruturados.
+Projeto demonstrativo de integração entre **PaperCut MF**, **Umango** e **Banco de Dados Firebird**, focado em captura de documentos, leitura de metadados via XML, OCR por zona e dados estruturados.
 
 Este projeto foi desenvolvido para fins **técnicos, educacionais e comerciais**, servindo como base funcional para demonstrações, provas de conceito e estudos de arquitetura ECM.
 
@@ -11,7 +11,6 @@ Este projeto foi desenvolvido para fins **técnicos, educacionais e comerciais**
 - Visão Geral  
 - Arquitetura  
 - Tecnologias Utilizadas  
-- Estrutura do Projeto  
 - Instalação  
 - Uso  
 - Licença  
