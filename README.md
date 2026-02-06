@@ -28,3 +28,14 @@ Tecnologias Utilizadas:
   Conexão local para persistência dos dados
   _____________________________________________________
 
+Este é um projeto demonstrativo, desenvolvido para fins técnicos, educacionais e comerciais, com o objetivo de apresentar uma arquitetura funcional de integração entre captura de documentos,  OCR e persistência de dados estruturados.
+
+O projeto pode ser utilizado como base para:
+Provas de conceito (PoC);
+Demonstrações técnicas;
+Treinamentos;
+Apresentações comerciais;
+Estudos de arquitetura ECM;
+
+Agradecimento:
+Agradecimento especial a Renato Zaha, pelo apoio, troca de conhecimento de sempre.
