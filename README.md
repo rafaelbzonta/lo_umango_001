@@ -39,8 +39,7 @@ O projeto pode ser utilizado como base para:
 
 ## Arquitetura
 
-
-<img width="1024" height="1024" alt="Gemini_Generated_Image_3pe2qn3pe2qn3pe2" src="https://github.com/user-attachments/assets/a2ee63a5-410f-4583-96f4-d3751380ddd3" />
+<img width="1024" height="1536" alt="ChatGPT Image 6_02_2026, 10_43_49" src="https://github.com/user-attachments/assets/1f8db197-7c9f-4bcd-896b-924b95a27b45" />
 
 A arquitetura é modular e permite fácil adaptação para outros bancos de dados ou motores de OCR.
 
