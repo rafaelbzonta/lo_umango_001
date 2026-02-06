@@ -91,7 +91,7 @@ A arquitetura é modular e permite fácil adaptação para outros bancos de dado
 
 ### Passos gerais
 
-1. Criar o banco de dados Firebird e executar o script SQL disponível na pasta `sql`.
+1. Criar o banco de dados Firebird e executar o script SQL disponível na pasta.
 2. Configurar a conexão ODBC do Firebird.
 3. Configurar o Umango para:
    - Monitorar a pasta de saída do PaperCut
