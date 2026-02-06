@@ -39,7 +39,7 @@ O projeto pode ser utilizado como base para:
 
 ## Arquitetura
 
-<img width="1024" height="1536" alt="ChatGPT Image 6_02_2026, 10_43_49" src="https://github.com/user-attachments/assets/1f8db197-7c9f-4bcd-896b-924b95a27b45" />
+<img width="1024" height="1536" alt="imagem1" src="https://github.com/user-attachments/assets/1e4a5e28-1980-4d67-81dd-1f8e21698dd4" />
 
 A arquitetura é modular e permite fácil adaptação para outros bancos de dados ou motores de OCR.
 
