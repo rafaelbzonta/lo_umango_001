@@ -1,4 +1,4 @@
-xml
+md
 
 {{XML([/scan/user/name])}}
 {{XML([/scan/fields/field[@id='prioridade']/value])}}
