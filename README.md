@@ -39,21 +39,8 @@ O projeto pode ser utilizado como base para:
 
 ## Arquitetura
 
-Fluxo lógico do processamento:
 
-[MFP]
-↓
-PaperCut MF
-↓ (PDF + XML de metadados)
-Pasta Monitorada
-↓
-Umango
-├─ Leitura de XML (PaperCut)
-├─ OCR por Zona (opcional)
-├─ Indexação de Campos
-↓
-Banco de Dados Firebird (ODBC)
-
+<img width="1024" height="1024" alt="Gemini_Generated_Image_3pe2qn3pe2qn3pe2" src="https://github.com/user-attachments/assets/a2ee63a5-410f-4583-96f4-d3751380ddd3" />
 
 A arquitetura é modular e permite fácil adaptação para outros bancos de dados ou motores de OCR.
 
