@@ -25,7 +25,7 @@ O **lo_umango_001** demonstra um fluxo completo de digitalização corporativa, 
 - Digitalização em MFP
 - Geração de metadados pelo PaperCut MF
 - Processamento e OCR por zona no Umango
-- Persistência dos dados em banco Firebird via ODBC
+- Inserção dos dados em banco Firebird via ODBC
 
 O projeto pode ser utilizado como base para:
 
