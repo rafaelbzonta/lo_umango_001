@@ -1,13 +1,3 @@
-Nome:
-
-user
-prioridade
-setor
-ordem_servico
-email_cliente
-valor_ocr
-
-Valor:
 
 {{XML([/scan/user/name])}}
 {{XML([/scan/fields/field[@id='prioridade']/value])}}
