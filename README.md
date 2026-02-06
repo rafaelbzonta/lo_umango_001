@@ -22,18 +22,18 @@ Este projeto foi desenvolvido para fins **técnicos, educacionais e comerciais**
 
 O **lo_umango_001** demonstra um fluxo completo de digitalização corporativa, integrando:
 
-- Digitalização em MFP
-- Geração de metadados pelo PaperCut MF
-- Processamento e OCR por zona no Umango
-- Inserção dos dados em banco Firebird via ODBC
+- Digitalização em MFP;
+- Geração de metadados pelo PaperCut MF;
+- Processamento e OCR por zona no Umango;
+- Inserção dos dados em banco Firebird via ODBC;
 
 O projeto pode ser utilizado como base para:
 
-- Provas de Conceito (PoC)  
-- Demonstrações técnicas  
-- Treinamentos  
-- Apresentações comerciais  
-- Estudos de arquitetura ECM  
+- Provas de Conceito (PoC);  
+- Demonstrações técnicas; 
+- Treinamentos;  
+- Apresentações comerciais;  
+- Estudos de arquitetura ECM;
 
 ---
 
@@ -51,11 +51,11 @@ A arquitetura é modular e permite fácil adaptação para outros bancos de dado
   Responsável pela captura dos documentos e geração de arquivos PDF e XML com metadados do scan.
 
 - **Umango**  
-  - Monitoramento de pasta  
-  - Leitura de XML externo  
-  - OCR por zona  
-  - Indexação de campos  
-  - Exportação de dados via ODBC  
+  - Monitoramento de pasta; 
+  - Leitura de XML externo; 
+  - OCR por zona;
+  - Indexação de campos;  
+  - Exportação de dados via ODBC; 
 
 - **Banco de Dados Firebird**  
   Utilizado para persistência dos dados estruturados extraídos no processo.
@@ -69,20 +69,20 @@ A arquitetura é modular e permite fácil adaptação para outros bancos de dado
 
 ### Pré-requisitos
 
-- PaperCut MF configurado com Integrated Scanning
-- Umango instalado e licenciado
-- Firebird instalado e operacional
-- Driver ODBC do Firebird configurado no sistema operacional
+- PaperCut MF configurado com Integrated Scanning;
+- Umango instalado e licenciado;
+- Firebird instalado e operacional;
+- Driver ODBC do Firebird configurado no sistema operacional;
 
 ### Passos gerais
 
 1. Criar o banco de dados Firebird e executar o script SQL disponível na pasta.
 2. Configurar a conexão ODBC do Firebird.
 3. Configurar o Umango para:
-   - Monitorar a pasta de saída do PaperCut
-   - Ler os campos do XML
-   - (Opcional) Aplicar OCR por zona
-   - Exportar os dados via ODBC
+   - Monitorar a pasta de saída do PaperCut;
+   - Ler os campos do XML;
+   - (Opcional) Aplicar OCR por zona;
+   - Exportar os dados via ODBC;
 4. Configurar o fluxo de digitalização no PaperCut MF.
 
 ---
@@ -104,9 +104,9 @@ Este é um **projeto demonstrativo**.
 O uso está liberado para fins educacionais e técnicos.  
 Para uso comercial, é necessário respeitar as licenças dos softwares envolvidos:
 
-- PaperCut MF  
-- Umango  
-- Firebird  
+- PaperCut MF;  
+- Umango;  
+- Firebird;  
 
 ---
 
