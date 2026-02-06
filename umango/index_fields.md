@@ -4,4 +4,4 @@
 {{XML([/scan/fields/field[@id='setor']/value])}}
 {{XML([/scan/fields/field[@id='ordem_servico']/value])}}
 {{XML([/scan/fields/field[@id='dados']/value/column[@index='3']])}}
-{{valor_ocr_zona}}
+{{valor_ocr_zona_2}}
