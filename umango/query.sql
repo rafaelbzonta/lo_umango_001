@@ -5,12 +5,12 @@ INSERT INTO SCAN_PROCESSADO (
     ORDEM_SERVICO,
     SETOR,
     EMAIL_CLIENTE,
-    VALOR_OCR_ZONA
+    VALOR_OCR_ZONA_2
 )
 VALUES (
     '{{user}}',
     '{{ordem_servico}}',
     '{{setor}}',
     '{{email_cliente}}',
-    '{{valor_ocr}}'
+    '{{valor_ocr_zona_2}}'
 );
